@@ -16,3 +16,19 @@ I am 42 years old. But i am ready for new challenges. I like to get new skills a
 - JavaScript basics
 - Git, GitHub
 - GIMP - GNU Image Manipulation Program
+
+### Education and courses:
+- Transport and Telecommunication Institute, Riga
+- codecademy
+    - Learn JavaScript
+    - Learn HTML
+    - How to Make a Website with NameCheap
+
+### Code example:
+```
+export function findShort(s: string): number {
+  let min = Math.min(...s.split(' ').map(({length}) => length));
+           return min;
+```
+### Projects:
+- [Curriculum Vitae](https://jaroslavjoc.github.io/rsschool-cv/cv)
