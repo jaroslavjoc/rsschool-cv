@@ -6,7 +6,7 @@
 - Phone: +37126350546
 - E-mail: jaroslavjoc@gmail.com
 - [LinkedIn](https://www.linkedin.com/in/jaroslav-joc-b3a623222/)
-- Discord Yaroslav(@jaroslavjoc)
+- Discord: Yaroslav(@jaroslavjoc)
 
 ***
 ### About me:
