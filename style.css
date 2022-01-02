@@ -11,6 +11,21 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    min-width: 320px;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #304D6D;
+  }
+
+  img {
+      width: 240px;
+      height: auto;
+      border-radius: 25px;
   }
 
   .container {
@@ -18,27 +33,48 @@
     margin: 0 auto;
   }
 
+  .header {
+      background-color: #63ADF2;
+  }
+
   .nav-list {
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    list-style: none;
   }
 
   html {
     scroll-behavior: smooth; 
   }
 
-  .nav-list {
-    list-style: none;
-  }
-
   .nav-link {
+    position: relative;
     padding: 0 20px;
     line-height: 50px;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 300;
+    color: #fff;
   }
 
-  .nav-link {
+  .nav-link::after {
+    content: "";
+    position: absolute;
+    left: 12px;
+    bottom: -5px;
+    width: calc(100% - 24px);
+    height: 2px;
+    background-color: #fff;
+    opacity: 0;
     transition: .3s;
+  }
+  
+  .nav-link:hover::after {
+    opacity: 1;
+    animation-name: slidein;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
   }
 
   .section-item a {
@@ -54,6 +90,7 @@
   .main-container {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
   }
   
   .section {
@@ -67,11 +104,11 @@
   }
 
   .section-title {
-    font-size: 20px;
-    font-weight: 400;
+    font-size: 25px;
+    font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 5px;
-    color: #829985;
+    color: #304D6D;
   }
 
   .link {
@@ -83,3 +120,54 @@
   .link:hover {
     color: #5d7260;
   }
+
+  .section-item {
+    position: relative;
+    padding-left: 10px;
+  }
+  
+  .section-profile {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    padding: 50px 30px 35px;
+    border-bottom: 5px solid #A7CCED;
+  }
+
+  .section-profile-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  .main-title {
+    position: relative;
+    padding: 0;
+    margin-bottom: 20px;
+    color: #304D6D;
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: 5px;
+    line-height: 50px;
+    word-spacing: 3px;
+  }
+  .main-title::after {
+    content: "";
+    position: absolute;
+    bottom: -19px;
+    left: 50%;
+    margin-left: -70px;
+    width: 150px;
+    height: 4px;
+    background-color: #82A0BC;
+}
+.section-subtitle {
+    margin-top: 20px;
+    color: #545E75;
+    line-height: 50px;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
