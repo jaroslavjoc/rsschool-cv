@@ -31,6 +31,7 @@
   .container {
     max-width: 1440px;
     margin: 0 auto;
+    min-height: 50px;
   }
 
   .header {
@@ -87,6 +88,12 @@
     color: #4d2323;
   }
 
+  @media (max-width: 1440px){
+      .container {
+          padding: 0 20px;
+      }
+  }
+
   .main-container {
     display: flex;
     flex-wrap: wrap;
@@ -95,6 +102,9 @@
   
   .section {
     width: 50%;
+    padding: 10px;
+    padding-bottom: 40px;
+    border-bottom: 2px solid #545E75;
   }
 
   @media (max-width: 768px) {
