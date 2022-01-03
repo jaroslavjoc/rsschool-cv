@@ -181,3 +181,21 @@
     font-weight: 600;
     letter-spacing: 2px;
 }
+.rss {
+    width: 120px;
+    height: 50px;
+    background-image: url(./assets/img/rss.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.footer {
+    background-color: #82A0BC;
+    padding: 20px;
+}
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    color: #fff;
+}
