@@ -2,6 +2,7 @@
     font-family: Roboto;
      src: url("assets/fonts/Roboto-Thin.ttf");
    }
+   
 
    * {
     box-sizing: border-box;
@@ -88,10 +89,10 @@
     color: #4d2323;
   }
 
-  @media (max-width: 1440px){
-      .container {
-          padding: 0 20px;
-      }
+
+
+  .main {
+      margin-bottom: auto;
   }
 
   .main-container {
@@ -99,6 +100,12 @@
     flex-wrap: wrap;
     justify-content: space-between;
   }
+
+  @media (max-width: 1440px){
+    .container {
+        padding: 0 20px;
+    }
+}
   
   .section {
     width: 50%;
