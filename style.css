@@ -145,6 +145,7 @@
   
   .section-profile {
     display: flex;
+    flex-direction: row-reverse;
     justify-content: space-around;
     width: 100%;
     padding: 50px 30px 35px;
